@@ -14,5 +14,8 @@ class TestBaseConvert(unittest.TestCase):
         # normal test for base 16
         self.assertEqual(convert(316,16),"13C")
 
+        # full letter test for base 16
+        self.assertEqual(convert(11259375,16),"ABCDEF")
+
 if __name__ == "__main__":
         unittest.main()
